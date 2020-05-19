@@ -1,0 +1,71 @@
+body {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.calculator{ 
+    display: grid;
+    margin: 0;
+    border: 1px solid black;
+    width: 300px;
+    border-radius: 10px;
+
+}
+
+.inputsRGB {
+    grid-area: inputsRGB;
+    display: flex;
+    flex-direction: column;
+}
+
+.r {
+    display: flex;
+    padding:20px;
+    justify-content: center;
+}
+#r2{
+    width: 10%;
+    margin-left: 30px;
+
+}
+.g {
+    display: flex;
+    padding:20px;
+    justify-content: center;
+}
+#g2{
+    width: 10%;
+    margin-left: 30px;
+}
+.b {
+    display: flex;
+    padding:20px;
+    justify-content: center;
+}
+
+#b2 {
+    width: 10%;
+    margin-left: 30px;
+}
+
+
+.spectre {
+    background-color: lightslategray;
+    height: 150px;
+    width: 150px;
+    justify-self: center;
+    border-radius: 25px;
+    grid-area: spectre;
+    margin:20px;
+    transition: 1.0s;
+    
+}
+
+.grid-template-areas {
+    grid-template-areas: 
+    "inputsRGB"
+    "spectre"
+    ;
+}
