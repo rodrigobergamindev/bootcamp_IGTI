@@ -1,18 +1,14 @@
-window.addEventListener('load', start);
-
 let globalNames = [];
 let inputName = null;
 let currentIndex = null;
 let isEditing = false;
 
-function start () {
+window.addEventListener('load', () => {
     inputName = document.querySelector('#inputName')
     preventFormSubmit()
     activateInput()
     render()
-}
-
-
+})
 function preventFormSubmit () {
     function handleFormSubmit(event) {
         event.preventDefault()
@@ -24,8 +20,7 @@ function preventFormSubmit () {
 
 function activateInput() {
     function insertName(newName) {
-        globalNames.push(newName)
-        console.log(globalNames)
+        globalNames = [...globalNames, newName]
     }
     function updateName(newName){
         globalNames[currentIndex] = newName;
@@ -59,7 +54,7 @@ function render() {
     const ul = document.createElement('ul')
     function createDeleteButton(index) {
         function deleteName() {
-            globalNames.splice(index, 1)
+            globalNames = globalNames.filter((_, i) => i !== index)
             render()
         }
         const button = document.createElement('button')
@@ -98,7 +93,7 @@ function render() {
     clearinput()
 }
 
-function clearinput(){
+const clearinput = () => {
     inputName.value = ''
     inputName.focus()
 }
