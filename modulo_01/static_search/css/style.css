@@ -9,12 +9,12 @@
     padding: 10px;
     font-family: 'GFS Didot', sans-serif;
     font-size: 0.9em;
-    color: white;
+    color: lightgray;
 }
 
 body {
     padding: 0px;
-    background-color: lightgray;
+    background-color: lightslategray;
 }
 
 img {
@@ -34,7 +34,7 @@ img {
 .data {
     width: 400px;
     padding: 10px;
-    border: 1px solid grey;
+    border: 1px solid lightgray;
     border-radius: 25px;
     margin-right: 10px;
 }
@@ -42,7 +42,7 @@ img {
 .statistics {
     width: 400px;
     padding: 10px;
-    border: 1px solid grey;
+    border: 1px solid lightgray;
     border-radius: 25px;
 }
 
