@@ -4,13 +4,20 @@ let tabStatistics = null
 let inputName = null;
 let allUsers = []
 let usersCount = 0
-let statistics = {}
+let buttonSearch = null
+let statistics = {
+    male: null,
+    female: null,
+    sumAges: null,
+    averageAges: null
+}
 
 window.addEventListener('load', () => {
     tabUsers = document.querySelector('#tabUsers')
     tabStatistics = document.querySelector('#tabStatistics')
     inputName = document.querySelector('#inputName')
     usersCount = document.querySelector('#usersCount')
+    buttonSearch = document.querySelector('#search')
 
     fetchUsers()
 })
@@ -34,6 +41,15 @@ async function fetchUsers() {
 function render() {
     preventFormSubmit()
     activateInput()
+    inputName.addEventListener('keyup', buttonActivate)
+}
+
+function buttonActivate(event){
+    if(event.key){
+        buttonSearch.removeAttribute('disabled')
+    }
+    event.target.value === '' ? buttonSearch.setAttribute('disabled', 'disabled') : buttonSearch.removeAttribute('disabled')
+
 }
 
 function preventFormSubmit () {
@@ -48,67 +64,79 @@ function preventFormSubmit () {
 function activateInput() {
 
     function searchName(searchQuery) {
-        function renderUsersList() {
-            let usersHTML = "<div>"
-            filtredUsers.forEach(user => {
-                const {name, age, picture} = user
-                const userHTML = `
-                    <div class="user">
-                    <img src="${picture}" alt="${name}"/> ${name}, ${age} anos
-                    </div>
-                `
-                usersHTML += userHTML
-            })
-            usersHTML += '</div>'
-            tabUsers.innerHTML = usersHTML
-            usersCount.innerHTML = `Usuários encontrados: ${filtredUsers.length}`
-        }
-
-        filtredUsers = allUsers.filter(user => {
+        let filtredUsers = allUsers.filter(user => {
             const name = user.name.toLowerCase()
             if(name.includes(searchQuery)){
                 return user
             }
         })
-        console.log(filtredUsers)
-        renderUsersList()
+        renderUsersList(filtredUsers)
+        renderStatisticsList(filtredUsers)
     }
     
     function handleTyping(event) {
         const key = event.key === 'Enter' ? event.key : ''
         let searchQuery = event.target.value.toLowerCase()
-        if(key){
+        if(key && searchQuery !== ''){
             searchName(searchQuery)
+            clearInput()
         }
         
     }
 
+    function clickSearch(event) {
+        let searchQuery = inputName.value
+        if(searchQuery !== ''){
+            searchName(searchQuery)
+            clearInput()
+        }
+    }
+
     inputName.focus()
     inputName.addEventListener('keyup', handleTyping)
+    buttonSearch.addEventListener('click', clickSearch)
 }
 
-function renderUsersList() {
+function renderUsersList(users) {
     let usersHTML = "<div>"
-    allUsers.forEach(user => {
+    users.forEach(user => {
         const {name, age, picture} = user
-
         const userHTML = `
-        <div class="user">
-            <div>
-            <img src="${picture}" alt="${name}"/>
+            <div class="user">
+            <img src="${picture}" alt="${name}"/> ${name}, ${age} anos
             </div>
-
-            <div>
-            <span>${name}, </span>
-            </div>
-
-            <div>
-            <span>${age} anos</span>
-            </div>
-        
         `
         usersHTML += userHTML
     })
     usersHTML += '</div>'
     tabUsers.innerHTML = usersHTML
+    usersCount.innerHTML = `<h5>Usuários encontrados: ${users.length}</h5>`
+}
+
+function renderStatisticsList(users) {
+    let male = users.filter(user => user.gender === 'male').length;
+    let female = users.filter(user => user.gender === 'female').length;
+    let sumAges = users.reduce((accumulator, current) => {
+        return accumulator + current.age
+    }, 0)
+    let averageAges = (sumAges / users.length).toFixed(2)
+
+    statistics = {male, female, sumAges, averageAges}
+    
+    const statisticsHTML = `
+    <div class="statistics-view">
+    <ul>
+        <li>Sexo masculino: ${statistics.male}</li>
+        <li>Sexo feminino: ${statistics.female}</li>
+        <li>Soma das idade: ${statistics.sumAges}</li>
+        <li>Média das idades: ${statistics.averageAges}</li>
+    </ul>
+    </div>
+    `
+    tabStatistics.innerHTML = `<h5>Estatísticas:</h5> ${statisticsHTML}`
+}
+
+function clearInput() {
+    inputName.value = ''
+    inputName.focus()
 }
