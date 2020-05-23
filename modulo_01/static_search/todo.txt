@@ -1,0 +1,6 @@
+(x) Fazer um fetch da API e exibir os dados necessários
+(x) Definir quais são as variáveis globais compartilhadas no estado da minha app
+(x) Criar o estado das minhas variáveis
+(x) Criar a função addEventListener e adicionar load e uma função start
+(x) Capturar name (first + last), picture, dob.age e gender
+(x) Criar uma função para buscar uma lista de usuários e ativar o input

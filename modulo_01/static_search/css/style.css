@@ -1,0 +1,41 @@
+    
+.view-container{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+
+
+body {
+    padding: 10px;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 50%;
+  }
+
+.user {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.data {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid grey;
+}
+
+.statistics {
+    flex-grow: 1;
+    margin-left: 100px;
+    padding: 10px;
+    border: 1px solid grey;
+}

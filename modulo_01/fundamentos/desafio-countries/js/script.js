@@ -32,12 +32,7 @@ async function fetchCountries() {
     const json = await res.json()
 
     allCountries = json.map(country => {
-        const {
-            numericCode,
-            translations,
-            population,
-            flag
-        } = country
+        const {numericCode,translations,population,flag} = country
         return {
             id: numericCode,
             name: translations.br,
