@@ -5,6 +5,7 @@ let inputName = null;
 let allUsers = []
 let usersCount = 0
 let buttonSearch = null
+let filtredUsers = []
 let statistics = {
     male: null,
     female: null,
@@ -64,7 +65,7 @@ function preventFormSubmit () {
 function activateInput() {
 
     function searchName(searchQuery) {
-        let filtredUsers = allUsers.filter(user => {
+        filtredUsers = allUsers.filter(user => {
             const name = user.name.toLowerCase()
             if(name.includes(searchQuery)){
                 return user
