@@ -1,0 +1,2 @@
+(x) Iterar os dois arquivos JSON e criar para cada estado um objeto Javascript contendo um array de cidades
+(x) Converter cada objeto de estado em um JSON com JSON.Stringfy()
