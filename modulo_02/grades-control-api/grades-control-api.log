@@ -1,0 +1,112 @@
+{"message":"Error log","level":"error"}
+{"message":"Warn log","level":"warn"}
+{"message":"Info log","level":"info"}
+{"message":"Verbose log","level":"verbose"}
+{"message":"Debug log","level":"debug"}
+{"message":"Silly log","level":"silly"}
+{"level":"info","message":"Hello with parameter!"}
+2020-06-01T03:02:42.905Z [grades-control-api] error: Error log
+2020-06-01T03:02:42.907Z [grades-control-api] warn: Warn log
+2020-06-01T03:02:42.908Z [grades-control-api] info: Info log
+2020-06-01T03:02:42.914Z [grades-control-api] verbose: Verbose log
+2020-06-01T03:02:42.915Z [grades-control-api] debug: Debug log
+2020-06-01T03:02:42.916Z [grades-control-api] silly: Silly log
+2020-06-01T03:02:42.916Z [grades-control-api] info: Hello with parameter!
+2020-06-01T03:10:58.127Z [grades-control-api] error: Error log
+2020-06-01T03:10:58.130Z [grades-control-api] warn: Warn log
+2020-06-01T03:10:58.131Z [grades-control-api] info: Info log
+2020-06-01T03:10:58.131Z [grades-control-api] verbose: Verbose log
+2020-06-01T03:10:58.132Z [grades-control-api] debug: Debug log
+2020-06-01T03:10:58.133Z [grades-control-api] silly: Silly log
+2020-06-01T03:10:58.133Z [grades-control-api] info: Hello with parameter!
+2020-06-01T03:12:55.661Z [grades-control-api] error: Error log
+2020-06-01T03:12:55.664Z [grades-control-api] warn: Warn log
+2020-06-01T03:12:55.664Z [grades-control-api] info: Info log
+2020-06-01T03:12:55.665Z [grades-control-api] verbose: Verbose log
+2020-06-01T03:12:55.665Z [grades-control-api] debug: Debug log
+2020-06-01T03:12:55.665Z [grades-control-api] silly: Silly log
+2020-06-01T03:12:55.666Z [grades-control-api] info: Hello with parameter!
+2020-06-01T03:14:35.864Z [grades-control-api] error: Error log
+2020-06-01T03:14:35.866Z [grades-control-api] warn: Warn log
+2020-06-01T03:14:35.867Z [grades-control-api] info: Info log
+2020-06-01T03:14:35.873Z [grades-control-api] verbose: Verbose log
+2020-06-01T03:14:35.874Z [grades-control-api] debug: Debug log
+2020-06-01T03:14:35.875Z [grades-control-api] silly: Silly log
+2020-06-01T03:14:35.875Z [grades-control-api] info: Hello with parameter!
+2020-06-01T03:15:09.804Z [grades-control-api] error: Error log
+2020-06-01T03:15:09.806Z [grades-control-api] warn: Warn log
+2020-06-01T03:15:09.807Z [grades-control-api] info: Info log
+2020-06-01T03:15:09.813Z [grades-control-api] verbose: Verbose log
+2020-06-01T03:15:09.814Z [grades-control-api] debug: Debug log
+2020-06-01T03:15:09.815Z [grades-control-api] silly: Silly log
+2020-06-01T03:15:09.815Z [grades-control-api] info: Hello with parameter!
+2020-06-01T03:15:21.958Z [grades-control-api] error: Error log
+2020-06-01T03:15:21.961Z [grades-control-api] warn: Warn log
+2020-06-01T03:15:21.961Z [grades-control-api] info: Info log
+2020-06-01T03:15:21.969Z [grades-control-api] verbose: Verbose log
+2020-06-01T03:15:21.969Z [grades-control-api] debug: Debug log
+2020-06-01T03:15:21.970Z [grades-control-api] silly: Silly log
+2020-06-01T03:15:21.971Z [grades-control-api] info: Hello with parameter!
+2020-06-01T03:16:30.872Z [grades-control-api] error: Error log
+2020-06-01T03:16:30.875Z [grades-control-api] warn: Warn log
+2020-06-01T03:16:30.876Z [grades-control-api] info: Info log
+2020-06-01T03:16:30.876Z [grades-control-api] verbose: Verbose log
+2020-06-01T03:16:30.877Z [grades-control-api] debug: Debug log
+2020-06-01T03:16:30.877Z [grades-control-api] silly: Silly log
+2020-06-01T03:16:30.878Z [grades-control-api] info: Hello with parameter!
+2020-06-01T03:17:09.513Z [grades-control-api] error: Error log
+2020-06-01T03:17:09.515Z [grades-control-api] warn: Warn log
+2020-06-01T03:17:09.516Z [grades-control-api] info: Info log
+2020-06-01T03:17:09.516Z [grades-control-api] verbose: Verbose log
+2020-06-01T03:17:09.525Z [grades-control-api] debug: Debug log
+2020-06-01T03:17:09.526Z [grades-control-api] silly: Silly log
+2020-06-01T03:17:09.526Z [grades-control-api] info: Hello with parameter!
+2020-06-01T03:17:49.937Z [grades-control-api] error: Error log
+2020-06-01T03:17:49.939Z [grades-control-api] warn: Warn log
+2020-06-01T03:17:49.940Z [grades-control-api] info: Info log
+2020-06-01T03:17:49.948Z [grades-control-api] verbose: Verbose log
+2020-06-01T03:17:49.949Z [grades-control-api] debug: Debug log
+2020-06-01T03:17:49.950Z [grades-control-api] silly: Silly log
+2020-06-01T03:17:49.950Z [grades-control-api] info: Hello with parameter!
+2020-06-01T03:19:51.374Z [grades-control-api] error: Error log
+2020-06-01T03:19:51.377Z [grades-control-api] warn: Warn log
+2020-06-01T03:19:51.377Z [grades-control-api] info: Info log
+2020-06-01T03:19:51.383Z [grades-control-api] verbose: Verbose log
+2020-06-01T03:19:51.384Z [grades-control-api] debug: Debug log
+2020-06-01T03:19:51.385Z [grades-control-api] silly: Silly log
+2020-06-01T03:19:51.386Z [grades-control-api] info: Hello with parameter!
+2020-06-01T03:28:16.059Z [grades-control-api] error: Error log
+2020-06-01T03:28:16.062Z [grades-control-api] warn: Warn log
+2020-06-01T03:28:16.069Z [grades-control-api] info: Info log
+2020-06-01T03:28:16.070Z [grades-control-api] verbose: Verbose log
+2020-06-01T03:28:16.071Z [grades-control-api] debug: Debug log
+2020-06-01T03:28:16.071Z [grades-control-api] silly: Silly log
+2020-06-01T03:28:16.072Z [grades-control-api] info: Hello with parameter!
+2020-06-01T03:28:41.622Z [grades-control-api] error: Error log
+2020-06-01T03:28:41.625Z [grades-control-api] warn: Warn log
+2020-06-01T03:28:41.625Z [grades-control-api] info: Info log
+2020-06-01T03:28:41.626Z [grades-control-api] verbose: Verbose log
+2020-06-01T03:28:41.627Z [grades-control-api] debug: Debug log
+2020-06-01T03:28:41.627Z [grades-control-api] silly: Silly log
+2020-06-01T03:28:41.628Z [grades-control-api] info: Hello with parameter!
+2020-06-01T03:28:59.537Z [grades-control-api] error: Error log
+2020-06-01T03:28:59.540Z [grades-control-api] warn: Warn log
+2020-06-01T03:28:59.548Z [grades-control-api] info: Info log
+2020-06-01T03:28:59.549Z [grades-control-api] verbose: Verbose log
+2020-06-01T03:28:59.549Z [grades-control-api] debug: Debug log
+2020-06-01T03:28:59.550Z [grades-control-api] silly: Silly log
+2020-06-01T03:28:59.550Z [grades-control-api] info: Hello with parameter!
+2020-06-01T03:29:17.084Z [grades-control-api] error: Error log
+2020-06-01T03:29:17.087Z [grades-control-api] warn: Warn log
+2020-06-01T03:29:17.087Z [grades-control-api] info: Info log
+2020-06-01T03:29:17.088Z [grades-control-api] verbose: Verbose log
+2020-06-01T03:29:17.088Z [grades-control-api] debug: Debug log
+2020-06-01T03:29:17.089Z [grades-control-api] silly: Silly log
+2020-06-01T03:29:17.089Z [grades-control-api] info: Hello with parameter!
+2020-06-01T03:29:28.249Z [grades-control-api] error: Error log
+2020-06-01T03:29:28.252Z [grades-control-api] warn: Warn log
+2020-06-01T03:29:28.253Z [grades-control-api] info: Info log
+2020-06-01T03:29:28.253Z [grades-control-api] verbose: Verbose log
+2020-06-01T03:29:28.254Z [grades-control-api] debug: Debug log
+2020-06-01T03:29:28.254Z [grades-control-api] silly: Silly log
+2020-06-01T03:29:28.255Z [grades-control-api] info: Hello with parameter!
