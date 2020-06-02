@@ -33,7 +33,7 @@ function stateWithCities() {
     //compareCitiesSort(newStates)
     //compareCitiesReverse(newStates)
     //compareName(newStates)
-    //compareNameReverse(newStates)
+    compareNameReverse(newStates)
     //compareNameUF(newStates)
     //compareNameUFReverse(newStates)
 }
@@ -97,51 +97,82 @@ function compareCitiesReverse(states) {
 
      const citiesReverse = cities.sort((a,b) => {
         return (a.cities - b.cities)
-    }).reverse()
+    })
 
-    console.log(citiesReverse)
+    console.log()
+    
+
 }
 
 function compareName(states){
 
-    const cities = states.map(state => {
+    const estados = states.map(state => {
         const {
             sigla,
-            nome
+            cidades
         } = state
         return {
             sigla: sigla,
-            nome: nome,
+            cidades: cidades
         }
     })
-
-    const citiesSorted = cities.sort((a,b) => {
-        return (a.nome.length - b.nome.length)
+    
+    const cidadesMap = []
+    estados.forEach(estado => {
+       const cidades = estado.cidades
+       cidades.map(cidade => {
+           cidadesMap.push(cidade)
+       })
     })
 
-    const citiesSortedPerName = citiesSorted.sort()
-    console.log(citiesSortedPerName)
+
+    const citiesSorted = cidadesMap.sort((a,b) => (a.Nome.length - b.Nome.length))
+    console.log(citiesSorted)
+
 }
 
 function compareNameReverse(states){
 
-    const cities = states.map(state => {
+    const estados = states.map(state => {
         const {
             sigla,
-            nome
+            cidades
         } = state
         return {
             sigla: sigla,
-            nome: nome
+            cidades: cidades
+        }
+    })
+    
+    const cidadesMap = []
+    estados.forEach(estado => {
+       const cidades = estado.cidades
+       cidades.map(cidade => {
+           cidadesMap.push(cidade)
+       })
+    })
+
+
+    const citiesSorted = cidadesMap.sort((a,b) => {
+        const nomeA = a.Nome.toUpperCase()
+        const nomeB = b.Nome.toUpperCase()
+        if(a.Nome.length > b.Nome.length){
+            return 1
+        }
+        else if(nomeA.length === nomeB.length){
+        if (nomeA === nomeB) {
+            return 0;
+          } else if (nomeA < nomeB) {
+            return -1;
+          } else {
+            return 1;
+          }
+        }else {
+            return -1
         }
     })
 
-    const citiesSorted = cities.sort((a,b) => {
-        return (a.nome.length - b.nome.length)
-    }).reverse()
-
-    const citiesSortedPerName = citiesSorted.sort()
-    console.log(citiesSortedPerName)
+    console.log(citiesSorted)
 }
 
 function compareNameUF(states) {
