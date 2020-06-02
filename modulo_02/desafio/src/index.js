@@ -12,6 +12,7 @@ app.get('/grades', (req, res, next) => {
     res.send(db.getGrades())
 })
 
+<<<<<<< HEAD
 app.get('/totalGrades/:student/:subject', (req, res, next) => {
     const student = req.params.student
     const subject = req.params.subject
@@ -30,12 +31,18 @@ app.get('/bestGrades/:subject/:type', (req,res,next) => {
     res.send(db.bestGrades(subject, type))
 })
 
+=======
+>>>>>>> eb8193b6c936a04530c408a8d9523dc000577cc8
 app.post('/grades/:student/:subject/:type/:value', (req, res, next) => {
     const grade = db.createGrade({
         student: req.params.student,
         subject: req.params.subject,
         type: req.params.type,
+<<<<<<< HEAD
         value: parseInt(req.params.value),
+=======
+        value: req.params.value,
+>>>>>>> eb8193b6c936a04530c408a8d9523dc000577cc8
         timestamp: new Date()
     })
     res.send(grade)
