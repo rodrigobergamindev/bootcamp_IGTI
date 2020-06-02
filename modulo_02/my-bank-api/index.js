@@ -12,6 +12,7 @@ app.get('/', (req, res) => {
 app.post('/account', (req,res) => {
     const params = req.body;
     fs.writeFile("accounts.json", JSON.stringify(params), err => console.log(err))
+    res.send(params)
 })
 
 app.listen(port, () => {
