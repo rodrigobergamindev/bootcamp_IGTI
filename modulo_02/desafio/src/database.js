@@ -40,7 +40,6 @@ function deleteGrade(id) {
     return grade
 }
 
-<<<<<<< HEAD
 function totalGrade(student, subject) {
     const myGrades = grades.filter(grade => {
         if(grade.student === student && grade.subject === subject) {
@@ -98,7 +97,3 @@ function bestGrades(subject, type) {
 }
 
 module.exports = { createGrade, getGrade, getGrades, updateGrade, deleteGrade, totalGrade, calculatorAverage, bestGrades}
-=======
-
-module.exports = { createGrade, getGrade, getGrades, updateGrade, deleteGrade }
->>>>>>> eb8193b6c936a04530c408a8d9523dc000577cc8

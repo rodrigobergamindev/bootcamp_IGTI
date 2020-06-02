@@ -10,11 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-<<<<<<< HEAD
     "express": "^4.17.1",
     "nodemon": "^2.0.4"
-=======
-    "express": "^4.17.1"
->>>>>>> eb8193b6c936a04530c408a8d9523dc000577cc8
   }
 }

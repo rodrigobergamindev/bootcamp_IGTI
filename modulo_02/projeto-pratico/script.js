@@ -33,13 +33,9 @@ function stateWithCities() {
     //compareCitiesSort(newStates)
     //compareCitiesReverse(newStates)
     //compareName(newStates)
-<<<<<<< HEAD
     //compareNameReverse(newStates)
     //compareNameUF(newStates)
     //compareNameUFReverse(newStates)
-=======
-    //compareNameReverse(states)
->>>>>>> eb8193b6c936a04530c408a8d9523dc000577cc8
 }
 
 function writeJsons(states) {
@@ -103,11 +99,7 @@ function compareCitiesReverse(states) {
         return (a.cities - b.cities)
     }).reverse()
 
-<<<<<<< HEAD
     console.log(citiesReverse)
-=======
-    console.log(citiesSorted)
->>>>>>> eb8193b6c936a04530c408a8d9523dc000577cc8
 }
 
 function compareName(states){
@@ -120,23 +112,12 @@ function compareName(states){
         return {
             sigla: sigla,
             nome: nome,
-<<<<<<< HEAD
-=======
-            nameLength: nome.length
->>>>>>> eb8193b6c936a04530c408a8d9523dc000577cc8
         }
     })
 
     const citiesSorted = cities.sort((a,b) => {
-<<<<<<< HEAD
         return (a.nome.length - b.nome.length)
     })
-=======
-        return (a.nameLength - b.nameLength)
-    })
-    
-    console.log(citiesSorted)
->>>>>>> eb8193b6c936a04530c408a8d9523dc000577cc8
 
     const citiesSortedPerName = citiesSorted.sort()
     console.log(citiesSortedPerName)
@@ -151,31 +132,18 @@ function compareNameReverse(states){
         } = state
         return {
             sigla: sigla,
-<<<<<<< HEAD
             nome: nome
-=======
-            nome: nome,
-            nameLength: nome.length
->>>>>>> eb8193b6c936a04530c408a8d9523dc000577cc8
         }
     })
 
     const citiesSorted = cities.sort((a,b) => {
-<<<<<<< HEAD
         return (a.nome.length - b.nome.length)
     }).reverse()
-=======
-        return (a.nameLength - b.nameLength)
-    }).reverse()
-    
-    console.log(citiesSorted)
->>>>>>> eb8193b6c936a04530c408a8d9523dc000577cc8
 
     const citiesSortedPerName = citiesSorted.sort()
     console.log(citiesSortedPerName)
 }
 
-<<<<<<< HEAD
 function compareNameUF(states) {
     const cities = states.map(state => {
         const {
@@ -215,8 +183,6 @@ function compareNameUFReverse(states) {
     const citiesSortedPerName = citiesSorted.sort()
     console.log(citiesSortedPerName[0])
 }
-=======
->>>>>>> eb8193b6c936a04530c408a8d9523dc000577cc8
 
 //countCities('SP')
 stateWithCities()
