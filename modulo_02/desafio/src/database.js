@@ -46,9 +46,6 @@ function totalGrade(student, subject) {
             return grade
         }
     })
-    console.log(student)
-    console.log(subject)
-    console.log(myGrades)
     
     
     const sumGrades = myGrades.reduce((accumulator, current) => {
@@ -71,7 +68,6 @@ function calculatorAverage(subject, type) {
     }, 0 ) 
 
     average = average / myGrades.length
-    console.log(myGrades)
     return `A média de notas para ${subject} em ${type} é ${average}`
 
 }
