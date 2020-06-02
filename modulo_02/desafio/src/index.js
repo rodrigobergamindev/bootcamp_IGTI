@@ -47,7 +47,7 @@ app.put('/grades/:id/:student/:subject/:type/:value', (req, res, next) => {
         student: req.params.student,
         subject: req.params.subject,
         type: req.params.type,
-        value: req.params.value,
+        value: parseInt(req.params.value),
         timestamp: new Date()
     })
     res.send(grade)
