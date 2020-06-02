@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap');
+
+.view-container{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 10px;
+    font-family: 'GFS Didot', sans-serif;
+    font-size: 0.9em;
+    color: lightgray;
+}
+
+body {
+    padding: 0px;
+    background-color: lightslategray;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 50%;
+  }
+
+.user {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.data {
+    width: 400px;
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 25px;
+    margin-right: 10px;
+}
+
+.statistics {
+    width: 400px;
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 25px;
+}
+
+h2 {
+    font-family: 'Pattaya', sans-serif;
+
+}
+
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+h2{
+    text-align: center;
+}
+
+#inputName { 
+    width: 500px;
+}
+
+#search {
+    align-self: center;
+    margin-left: 10px;
+}

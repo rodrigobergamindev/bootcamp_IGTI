@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>RGB Calculator</title>
+</head>
+<body>
+    <h1>RGB Calculator</h1>
+    <div class="calculator grid-template-area">
+    <form>
+        <div class="input">
+        
+        <div class="item"><span>R</span><input type="range" id="r" min="0" max="255"/></div>
+        <div class="item"><span>G</span><input type="range" id="g" min="0" max="255"/></div>
+        <div class="item"><span>B</span><input type="range" id="b" min="0" max="255"/></div>
+        </div>
+        <div class="result">
+        <input type="text" id="r" disabled />
+        <input type="text" id="g" disabled />
+        <input type="text" id="b" disabled />
+        </div>
+    </form>
+
+    <div class="spectre"></div>
+
+</div>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
