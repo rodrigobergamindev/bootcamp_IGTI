@@ -6,8 +6,9 @@ const db = require('./database')
 
 /*
 app.use(function (req,res,next))
-app.use(db.createInitialJson())
+app.use(db.createInitialJson()) **
 */
+
 
 
 app.get('/', (req, res) => {
