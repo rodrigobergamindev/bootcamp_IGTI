@@ -39,7 +39,7 @@ app.post('/createGrade', (req, res, next) => {
         value: parseInt(req.body.value),
         timestamp: new Date()
     })
-    res.send(grade)
+    res.send('grade created')
 })
 
 app.put('/updateGrade', (req, res, next) => {
@@ -51,12 +51,12 @@ app.put('/updateGrade', (req, res, next) => {
         value: parseInt(req.body.value),
         timestamp: new Date()
     })
-    res.send(grade)
+    res.send('grade updated')
 })
 
 app.delete('/grades/:id',(req, res, next) => {
     const grade = db.deleteGrade(req.params.id)
-    res.send(grade)
+    res.send(`A grade de ID ${req.params.id} foi excluída`)
 }) 
 
 

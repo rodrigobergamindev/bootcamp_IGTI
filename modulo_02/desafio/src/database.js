@@ -36,8 +36,6 @@ function createGrade(grade) {
     grades.push(grade)
     grades_control.nextId = sequence.id
     fs.writeFile('./grades.json', JSON.stringify(grades_control), err =>  console.log(err))
-
-    return grade
 }
 
 function getGrade(id) {
@@ -58,8 +56,6 @@ function updateGrade(grade) {
     const element = grades.indexOf(oldGrade)
     grades.splice(element, 1, grade)
     fs.writeFile('./grades.json', JSON.stringify(grades_control), err =>  console.log(err))
-
-    return grades[id]
 }
 
 function deleteGrade(id) {
@@ -72,8 +68,6 @@ function deleteGrade(id) {
     const element = grades.indexOf(oldGrade)
     grades.splice(element, 1)
     fs.writeFile('./grades.json', JSON.stringify(grades_control), err =>  console.log(err))
-    
-    return grades_control
 }
 
 function totalGrade(params) {
