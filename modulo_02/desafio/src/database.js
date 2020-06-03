@@ -1,4 +1,5 @@
 const grades_control = require('./grades.json')
+const fs = require('fs')
 
 
 const sequence = {
@@ -40,7 +41,11 @@ function deleteGrade(id) {
     return grade
 }
 
-function totalGrade(student, subject) {
+function totalGrade(params) {
+    const data = params
+    const student = data.student
+    const subject = data.subject
+
     const myGrades = grades.filter(grade => {
         if(grade.student === student && grade.subject === subject) {
             return grade
@@ -56,7 +61,11 @@ function totalGrade(student, subject) {
     
 }
 
-function calculatorAverage(subject, type) { 
+function calculatorAverage(params) { 
+    const data = params
+    const type = data.type
+    const subject = data.subject
+
     const myGrades = grades.filter(grade => {
         if(grade.subject === subject && grade.type === type) {
             return grade
@@ -72,7 +81,11 @@ function calculatorAverage(subject, type) {
 
 }
 
-function bestGrades(subject, type) { 
+function bestGrades(params) { 
+    const data = params
+    const type = data.type
+    const subject = data.subject
+    
     const myGrades = grades.filter(grade => {
         if(grade.subject === subject && grade.type === type) {
             return grade
