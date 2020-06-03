@@ -4,14 +4,10 @@ const port = 3000
 const db = require('./database')
 
 
-/*
-app.use(function (req,res,next))
-app.use(db.createInitialJson()) **
-*/
 
+app.use(express.json())
 
-
-app.get('/', (req, res) => {
+app.get('/test', (req, res) => {
     res.send("Hello World!")
 })
 
@@ -27,5 +23,6 @@ app.post('/account', (req, res) => {
 
 
 app.listen(port, () => {
+    db.createInitialJson()
     console.log(`API Started on port ${port}`)
 })
