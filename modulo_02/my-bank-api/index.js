@@ -1,10 +1,14 @@
 const express = require('express')
 const app = express()
-const fs = require('fs')
 const port = 3000
 const db = require('./database')
 
-app.use(express.json())
+
+/*
+app.use(function (req,res,next))
+app.use(db.createInitialJson())
+*/
+
 
 app.get('/', (req, res) => {
     res.send("Hello World!")
@@ -22,19 +26,5 @@ app.post('/account', (req, res) => {
 
 
 app.listen(port, () => {
-    try {
-        fs.readFile("./accounts.json", "utf8", (err, data) => {
-            if (err) {
-                const initialJson = {
-                    nextId: 1,
-                    accounts: []
-                }
-                fs.writeFile('./accounts.json', JSON.stringify(initialJson), (err) => console.log(err))
-            }
-
-        })
-    } catch (error) {
-        console.log(error)
-    }
     console.log(`API Started on port ${port}`)
 })
