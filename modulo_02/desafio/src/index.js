@@ -42,7 +42,7 @@ app.post('/createGrade', (req, res, next) => {
     res.send(grade)
 })
 
-app.put('/upgradeGrade', (req, res, next) => {
+app.put('/updateGrade', (req, res, next) => {
     const grade = db.updateGrade({
         id: parseInt(req.body.id),
         student: req.body.student,

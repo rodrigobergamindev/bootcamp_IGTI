@@ -15,10 +15,28 @@ const sequence = {
 
 const grades = grades_control.grades
 
+/*
+const myObj = {
+    id: sequence.id,
+    student: "Rodrigo Bergamin",
+    subject: "03 - React",
+    type: "Desafio",
+    value: 40,
+    timestamp: new Date()
+}
+grades_control.nextId = sequence.id
+grades.push(myObj)
+
+console.log(grades_control)
+*/
+
+
 function createGrade(grade) {
     if(!grade.id) grade.id = sequence.id
     grades.push(grade)
-    grades_control.nextId++
+    grades_control.nextId = sequence.id
+    fs.writeFile('./grades.json', JSON.stringify(grades_control), err =>  console.log(err))
+
     return grade
 }
 
@@ -31,14 +49,31 @@ function getGrades() {
 }
 
 function updateGrade(grade) {
-    return grades[grade.id - 1] = grade
+
+    function myGrade(element){
+        return element.id === grade.id
+    }
+
+    const oldGrade = grades.find(myGrade)
+    const element = grades.indexOf(oldGrade)
+    grades.splice(element, 1, grade)
+    fs.writeFile('./grades.json', JSON.stringify(grades_control), err =>  console.log(err))
+
+    return grades[id]
 }
 
 function deleteGrade(id) {
     
-    const grade = grades[id -1]
-    grades.splice((id - 1), 1)
-    return grade
+    function myGrade(element){
+        return element.id === id
+    }
+
+    const oldGrade = grades.find(myGrade)
+    const element = grades.indexOf(oldGrade)
+    grades.splice(element, 1)
+    fs.writeFile('./grades.json', JSON.stringify(grades_control), err =>  console.log(err))
+    
+    return grades_control
 }
 
 function totalGrade(params) {
