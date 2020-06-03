@@ -1,9 +1,5 @@
 const fs = require('fs')
 
-
-
-/*Writting JSON file*/
-
 /*METHODS*/
 
 const sequence = {
