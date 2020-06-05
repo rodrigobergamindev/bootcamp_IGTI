@@ -1,12 +1,1 @@
-{
-    "id": 3,
-    "accounts": [{
-        "name": "Leandro Oliveira",
-        "balance": 8000,
-        "id": 1
-    }, {
-        "name": "Rodrigo Bergamin",
-        "balance": 3000,
-        "id": 2
-    }]
-}
+{"id":3,"accounts":[{"name":"Leandro Oliveira","balance":8450.45,"id":1}]}
