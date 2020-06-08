@@ -1,1 +1,94 @@
-{"id":"1","sigla":"AC","nome":"Acre","cidades":[{"ID":"79","Nome":"Acrelândia","Estado":"AC"},{"ID":"80","Nome":"Assis Brasil","Estado":"AC"},{"ID":"81","Nome":"Brasiléia","Estado":"AC"},{"ID":"82","Nome":"Bujari","Estado":"AC"},{"ID":"83","Nome":"Capixaba","Estado":"AC"},{"ID":"84","Nome":"Cruzeiro do Sul","Estado":"AC"},{"ID":"85","Nome":"Epitaciolândia","Estado":"AC"},{"ID":"86","Nome":"Feijó","Estado":"AC"},{"ID":"87","Nome":"Jordão","Estado":"AC"},{"ID":"88","Nome":"Mâncio Lima","Estado":"AC"},{"ID":"89","Nome":"Manoel Urbano","Estado":"AC"},{"ID":"90","Nome":"Marechal Thaumaturgo","Estado":"AC"},{"ID":"91","Nome":"Plácido de Castro","Estado":"AC"},{"ID":"92","Nome":"Porto Acre","Estado":"AC"},{"ID":"93","Nome":"Porto Walter","Estado":"AC"},{"ID":"94","Nome":"Rio Branco","Estado":"AC"},{"ID":"95","Nome":"Rodrigues Alves","Estado":"AC"},{"ID":"96","Nome":"Santa Rosa do Purus","Estado":"AC"},{"ID":"97","Nome":"Sena Madureira","Estado":"AC"},{"ID":"98","Nome":"Senador Guiomard","Estado":"AC"},{"ID":"99","Nome":"Tarauacá","Estado":"AC"},{"ID":"100","Nome":"Xapuri","Estado":"AC"}]}
+{
+    "id": "1",
+    "sigla": "AC",
+    "nome": "Acre",
+    "cidades": [{
+        "ID": "79",
+        "Nome": "Acrelândia",
+        "Estado": "AC"
+    }, {
+        "ID": "80",
+        "Nome": "Assis Brasil",
+        "Estado": "AC"
+    }, {
+        "ID": "81",
+        "Nome": "Brasiléia",
+        "Estado": "AC"
+    }, {
+        "ID": "82",
+        "Nome": "Bujari",
+        "Estado": "AC"
+    }, {
+        "ID": "83",
+        "Nome": "Capixaba",
+        "Estado": "AC"
+    }, {
+        "ID": "84",
+        "Nome": "Cruzeiro do Sul",
+        "Estado": "AC"
+    }, {
+        "ID": "85",
+        "Nome": "Epitaciolândia",
+        "Estado": "AC"
+    }, {
+        "ID": "86",
+        "Nome": "Feijó",
+        "Estado": "AC"
+    }, {
+        "ID": "87",
+        "Nome": "Jordão",
+        "Estado": "AC"
+    }, {
+        "ID": "88",
+        "Nome": "Mâncio Lima",
+        "Estado": "AC"
+    }, {
+        "ID": "89",
+        "Nome": "Manoel Urbano",
+        "Estado": "AC"
+    }, {
+        "ID": "90",
+        "Nome": "Marechal Thaumaturgo",
+        "Estado": "AC"
+    }, {
+        "ID": "91",
+        "Nome": "Plácido de Castro",
+        "Estado": "AC"
+    }, {
+        "ID": "92",
+        "Nome": "Porto Acre",
+        "Estado": "AC"
+    }, {
+        "ID": "93",
+        "Nome": "Porto Walter",
+        "Estado": "AC"
+    }, {
+        "ID": "94",
+        "Nome": "Rio Branco",
+        "Estado": "AC"
+    }, {
+        "ID": "95",
+        "Nome": "Rodrigues Alves",
+        "Estado": "AC"
+    }, {
+        "ID": "96",
+        "Nome": "Santa Rosa do Purus",
+        "Estado": "AC"
+    }, {
+        "ID": "97",
+        "Nome": "Sena Madureira",
+        "Estado": "AC"
+    }, {
+        "ID": "98",
+        "Nome": "Senador Guiomard",
+        "Estado": "AC"
+    }, {
+        "ID": "99",
+        "Nome": "Tarauacá",
+        "Estado": "AC"
+    }, {
+        "ID": "100",
+        "Nome": "Xapuri",
+        "Estado": "AC"
+    }]
+}
