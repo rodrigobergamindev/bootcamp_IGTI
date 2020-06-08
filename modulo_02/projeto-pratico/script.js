@@ -1,89 +1,162 @@
-const estados = require('./Estados.json')
-const cidades = require('./Cidades.json')
 const fs = require('fs')
 
-function stateWithCities() {
 
-    let newStates = estados.map(estado => {
-        const {
-            ID,
-            Sigla,
-            Nome
-        } = estado
+function main(){
+
+    const cities = JSON.parse(fs.readFileSync('./modulo_02/projeto-pratico/Cidades.json'))
+    const rawStates = JSON.parse(fs.readFileSync('./modulo_02/projeto-pratico/Estados.json'))
+
+    const states = rawStates.map(state => {
+        const {ID, Sigla, Nome} = state 
         return {
             id: ID,
             sigla: Sigla,
             nome: Nome,
             cidades: []
         }
-
     })
-
-    cidades.forEach(cidade => {
-
-        newStates.forEach(estado => {
-            if (cidade.Estado === estado.id) {
-                estado.cidades.push(cidade)
+    
+    cities.forEach(city => {
+        states.forEach(state => {
+            if(city.Estado === state.id){
+                city.Estado = state.sigla
+                state.cidades.push(city)
             }
         })
-
     })
 
-    writeJsons(newStates)
-    //compareCitiesSort(newStates)
-    //compareCitiesReverse(newStates)
-    //compareName(newStates)
-    //compareNameReverse(newStates)
-    //compareNameUF(newStates)
-    //compareNameUFReverse(newStates)
+    //writeJSONS(states)
+    //countCities('SP')
+    //compareCitiesPerState()
+    //compareCitiesPerStateTwo()
+    //countCitiesUF() - NÃO COMPLETADO
+    //countCitiesPerUF(states) - MODIFICAR
 }
 
-function writeJsons(states) {
-    states.forEach(estado => {
-        fs.writeFile(`./${estado.sigla}.json`, JSON.stringify(estado), function (err) {
-            if (err) {
-                console.log(err)
-            }
-        })
-
-    })
-
-}
-
-function countCities(UF) {
-    fs.readFile(`./${UF}.json`, function (err, data) {
-        if (err) {
+function countCities (UF){
+    fs.readFile(`./modulo_02/projeto-pratico/states/${UF}.json`, 'utf8', (err,data) => {
+        if(err){
             console.log(err)
         }
-
         const state = JSON.parse(data)
-        const cities = state.cidades
-        console.log(`${UF} possui ${cities.length} cidades`)
+        console.log(`${UF} tem ${state.cidades.length} cidades`)
     })
-
+}
+function writeJSONS(states){
+    states.forEach(state => {
+        fs.writeFile(`./modulo_02/projeto-pratico/states/${state.sigla}.json`, JSON.stringify(state), (err) => console.log(err))
+    })
 }
 
-function compareCitiesSort(states) {
-
-    const cities = states.map(state => {
-        const {
-            sigla,
-            cidades
-        } = state
-        return {
-            sigla: sigla,
-            cities: cidades.length
+function compareCitiesPerState(){
+    fs.readdir('./modulo_02/projeto-pratico/states/', (err, files) => { 
+        if (err) {
+          console.log(err); 
         }
-    })
+        let states = []
+          files.forEach(file => {  
+            states.push(file)
+          }) 
+          count(states)
+      }) 
 
-     const citiesSorted = cities.sort((a,b) => {
-        return (a.cities - b.cities)
-    })
+    function count(states){
+        states.forEach(state => {
+            let rawData = fs.readFileSync(`./modulo_02/projeto-pratico/states/${state}`)
+            let states = JSON.parse(rawData)
+            let cities = states.cidades
 
-    console.log(citiesSorted)
+            const longerCityName = cities.map(city => `${city.Nome} - ${city.Estado}`)
+            
+            const longer = longerCityName.sort((a,b) => {
+                return a.length - b.length
+            })
+            .reverse()
+            .filter(city => city.length === longerCityName[0].length)
+            .sort()[0]
+
+            
+            const a = 'Santo Antônio do Aracanguá'
+            const b = 'Euclides da Cunha Paulista'
+            console.log(longer)
+        })
+        
+    }
 }
 
-function compareCitiesReverse(states) {
+function compareCitiesPerStateTwo(){
+    fs.readdir('./modulo_02/projeto-pratico/states/', (err, files) => { 
+        if (err) {
+          console.log(err); 
+        }
+        let states = []
+          files.forEach(file => {  
+            states.push(file)
+          }) 
+          count(states)
+      }) 
+
+    function count(states){
+        states.forEach(state => {
+            let rawData = fs.readFileSync(`./modulo_02/projeto-pratico/states/${state}`)
+            let states = JSON.parse(rawData)
+            let cities = states.cidades
+
+            const longerCityName = cities.map(city => `${city.Nome} - ${city.Estado}`)
+            
+            const longer = longerCityName.sort((a,b) => {
+                return a.length - b.length
+            })
+            .filter(city => city.length === longerCityName[0].length)
+            .sort()[0]
+
+            
+            const a = 'Santo Antônio do Aracanguá'
+            const b = 'Euclides da Cunha Paulista'
+            console.log(longer)
+        })
+        
+    }
+}
+
+function compareCitiesUF(){
+    fs.readdir('./modulo_02/projeto-pratico/states/', (err, files) => { 
+        if (err) {
+          console.log(err); 
+        }
+        let states = []
+          files.forEach(file => {  
+            states.push(file)
+          }) 
+          count(states)
+      }) 
+
+    function count(states){
+        states.forEach(state => {
+            let rawData = fs.readFileSync(`./modulo_02/projeto-pratico/states/${state}`)
+            let states = JSON.parse(rawData)
+            let cities = states.cidades
+            let longerPerUF = []
+
+            const longerCityName = cities.map(city => `${city.Nome} - ${city.Estado}`)
+            
+            let longer = longerCityName.sort((a,b) => {
+                return a.length - b.length
+            })
+            .reverse()
+            .filter(city => city.length === longerCityName[0].length)
+            .sort()[0]
+            longerPerUF.push(longer)
+
+            console.log(longerPerUF)
+
+            
+        })
+        
+    }
+}
+
+function countCitiesPerUF(states){
     const cities = states.map(state => {
         const {
             sigla,
@@ -100,224 +173,7 @@ function compareCitiesReverse(states) {
     })
 
     console.log(citiesSorted.reverse())
-    
-
 }
 
-function compareName(states){
+main()
 
-    const estados = states.map(state => {
-        const {
-            sigla,
-            cidades
-        } = state
-        return {
-            sigla: sigla,
-            cidades: cidades
-        }
-    })
-    
-    const cidadesMap = []
-    estados.forEach(estado => {
-       const cidades = estado.cidades
-       cidades.forEach(cidade => {
-           const siglaUF = estado.sigla
-           cidade.sigla = siglaUF
-           cidadesMap.push(cidade)
-       })
-    })
-
-
-    const newCities = cidadesMap.map(cidade => {
-        const {Nome, sigla} = cidade
-        return {
-            nome: Nome,
-            sigla: sigla
-        }
-    })
-
-    const citiesSorted = newCities.sort((a,b) => {
-        const nomeA = a.nome.toUpperCase()
-        const nomeB = b.nome.toUpperCase()
-        if(a.nome.length > b.nome.length){
-            return 1
-        }
-        else if(nomeA.length === nomeB.length){
-        if (nomeA === nomeB) {
-            return 0;
-          } else if (nomeA < nomeB) {
-            return -1;
-          } else {
-            return 1;
-          }
-        }else {
-            return -1
-        }
-    })
-
-    console.log(citiesSorted)
-
-}
-
-function compareNameReverse(states){
-
-    const estados = states.map(state => {
-        const {
-            sigla,
-            cidades
-        } = state
-        return {
-            sigla: sigla,
-            cidades: cidades
-        }
-    })
-    
-    const cidadesMap = []
-    estados.forEach(estado => {
-       const cidades = estado.cidades
-       cidades.forEach(cidade => {
-           const siglaUF = estado.sigla
-           cidade.sigla = siglaUF
-           cidadesMap.push(cidade)
-       })
-    })
-
-
-    const newCities = cidadesMap.map(cidade => {
-        const {Nome, sigla} = cidade
-        return {
-            nome: Nome,
-            sigla: sigla
-        }
-    })
-
-    const citiesSorted = newCities.sort((a,b) => {
-        const nomeA = a.nome.toUpperCase()
-        const nomeB = b.nome.toUpperCase()
-        if(a.nome.length > b.nome.length){
-            return 1
-        }
-        else if(nomeA.length === nomeB.length){
-        if (nomeA === nomeB) {
-            return 0;
-          } else if (nomeA < nomeB) {
-            return -1;
-          } else {
-            return 1;
-          }
-        }else {
-            return -1
-        }
-    })
-
-    console.log(citiesSorted.reverse())
-}
-
-function compareNameUF(states) {
-    const estados = states.map(state => {
-        const {
-            sigla,
-            cidades
-        } = state
-        return {
-            sigla: sigla,
-            cidades: cidades
-        }
-    })
-    
-    const cidadesMap = []
-    estados.forEach(estado => {
-       const cidades = estado.cidades
-       cidades.forEach(cidade => {
-           const siglaUF = estado.sigla
-           cidade.sigla = siglaUF
-           cidadesMap.push(cidade)
-       })
-    })
-
-
-    const newCities = cidadesMap.map(cidade => {
-        const {Nome, sigla} = cidade
-        return {
-            nome: Nome,
-            sigla: sigla
-        }
-    })
-
-    const citiesSorted = newCities.sort((a,b) => {
-        const nomeA = a.nome.toUpperCase()
-        const nomeB = b.nome.toUpperCase()
-        if(a.nome.length > b.nome.length){
-            return 1
-        }
-        else if(nomeA.length === nomeB.length){
-        if (nomeA === nomeB) {
-            return 0;
-          } else if (nomeA < nomeB) {
-            return -1;
-          } else {
-            return 1;
-          }
-        }else {
-            return -1
-        }
-    })
-
-    console.log(citiesSorted[0])
-}
-
-function compareNameUFReverse(states) {
-    const estados = states.map(state => {
-        const {
-            sigla,
-            cidades
-        } = state
-        return {
-            sigla: sigla,
-            cidades: cidades
-        }
-    })
-    
-    const cidadesMap = []
-    estados.forEach(estado => {
-       const cidades = estado.cidades
-       cidades.forEach(cidade => {
-           const siglaUF = estado.sigla
-           cidade.sigla = siglaUF
-           cidadesMap.push(cidade)
-       })
-    })
-
-
-    const newCities = cidadesMap.map(cidade => {
-        const {Nome, sigla} = cidade
-        return {
-            nome: Nome,
-            sigla: sigla
-        }
-    })
-
-    const citiesSorted = newCities.sort((a,b) => {
-        const nomeA = a.nome.toUpperCase()
-        const nomeB = b.nome.toUpperCase()
-        if(a.nome.length > b.nome.length){
-            return 1
-        }
-        else if(nomeA.length === nomeB.length){
-        if (nomeA === nomeB) {
-            return 0;
-          } else if (nomeA < nomeB) {
-            return -1;
-          } else {
-            return 1;
-          }
-        }else {
-            return -1
-        }
-    })
-
-    console.log(citiesSorted.reverse()[0])
-}
-
-//countCities('SP')
-stateWithCities()

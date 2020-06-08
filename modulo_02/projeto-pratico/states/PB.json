@@ -1,0 +1,898 @@
+{
+    "id": "15",
+    "sigla": "PB",
+    "nome": "Paraíba",
+    "cidades": [{
+        "ID": "2561",
+        "Nome": "Água Branca",
+        "Estado": "PB"
+    }, {
+        "ID": "2562",
+        "Nome": "Aguiar",
+        "Estado": "PB"
+    }, {
+        "ID": "2563",
+        "Nome": "Alagoa Grande",
+        "Estado": "PB"
+    }, {
+        "ID": "2564",
+        "Nome": "Alagoa Nova",
+        "Estado": "PB"
+    }, {
+        "ID": "2565",
+        "Nome": "Alagoinha",
+        "Estado": "PB"
+    }, {
+        "ID": "2566",
+        "Nome": "Alcantil",
+        "Estado": "PB"
+    }, {
+        "ID": "2567",
+        "Nome": "Algodão de Jandaíra",
+        "Estado": "PB"
+    }, {
+        "ID": "2568",
+        "Nome": "Alhandra",
+        "Estado": "PB"
+    }, {
+        "ID": "2569",
+        "Nome": "Amparo",
+        "Estado": "PB"
+    }, {
+        "ID": "2570",
+        "Nome": "Aparecida",
+        "Estado": "PB"
+    }, {
+        "ID": "2571",
+        "Nome": "Araçagi",
+        "Estado": "PB"
+    }, {
+        "ID": "2572",
+        "Nome": "Arara",
+        "Estado": "PB"
+    }, {
+        "ID": "2573",
+        "Nome": "Araruna",
+        "Estado": "PB"
+    }, {
+        "ID": "2574",
+        "Nome": "Areia",
+        "Estado": "PB"
+    }, {
+        "ID": "2575",
+        "Nome": "Areia de Baraúnas",
+        "Estado": "PB"
+    }, {
+        "ID": "2576",
+        "Nome": "Areial",
+        "Estado": "PB"
+    }, {
+        "ID": "2577",
+        "Nome": "Aroeiras",
+        "Estado": "PB"
+    }, {
+        "ID": "2578",
+        "Nome": "Assunção",
+        "Estado": "PB"
+    }, {
+        "ID": "2579",
+        "Nome": "Baía da Traição",
+        "Estado": "PB"
+    }, {
+        "ID": "2580",
+        "Nome": "Bananeiras",
+        "Estado": "PB"
+    }, {
+        "ID": "2581",
+        "Nome": "Baraúna",
+        "Estado": "PB"
+    }, {
+        "ID": "2582",
+        "Nome": "Barra de Santa Rosa",
+        "Estado": "PB"
+    }, {
+        "ID": "2583",
+        "Nome": "Barra de Santana",
+        "Estado": "PB"
+    }, {
+        "ID": "2584",
+        "Nome": "Barra de São Miguel",
+        "Estado": "PB"
+    }, {
+        "ID": "2585",
+        "Nome": "Bayeux",
+        "Estado": "PB"
+    }, {
+        "ID": "2586",
+        "Nome": "Belém",
+        "Estado": "PB"
+    }, {
+        "ID": "2587",
+        "Nome": "Belém do Brejo do Cruz",
+        "Estado": "PB"
+    }, {
+        "ID": "2588",
+        "Nome": "Bernardino Batista",
+        "Estado": "PB"
+    }, {
+        "ID": "2589",
+        "Nome": "Boa Ventura",
+        "Estado": "PB"
+    }, {
+        "ID": "2590",
+        "Nome": "Boa Vista",
+        "Estado": "PB"
+    }, {
+        "ID": "2591",
+        "Nome": "Bom Jesus",
+        "Estado": "PB"
+    }, {
+        "ID": "2592",
+        "Nome": "Bom Sucesso",
+        "Estado": "PB"
+    }, {
+        "ID": "2593",
+        "Nome": "Bonito de Santa Fé",
+        "Estado": "PB"
+    }, {
+        "ID": "2594",
+        "Nome": "Boqueirão",
+        "Estado": "PB"
+    }, {
+        "ID": "2595",
+        "Nome": "Borborema",
+        "Estado": "PB"
+    }, {
+        "ID": "2596",
+        "Nome": "Brejo do Cruz",
+        "Estado": "PB"
+    }, {
+        "ID": "2597",
+        "Nome": "Brejo dos Santos",
+        "Estado": "PB"
+    }, {
+        "ID": "2598",
+        "Nome": "Caaporã",
+        "Estado": "PB"
+    }, {
+        "ID": "2599",
+        "Nome": "Cabaceiras",
+        "Estado": "PB"
+    }, {
+        "ID": "2600",
+        "Nome": "Cabedelo",
+        "Estado": "PB"
+    }, {
+        "ID": "2601",
+        "Nome": "Cachoeira dos Índios",
+        "Estado": "PB"
+    }, {
+        "ID": "2602",
+        "Nome": "Cacimba de Areia",
+        "Estado": "PB"
+    }, {
+        "ID": "2603",
+        "Nome": "Cacimba de Dentro",
+        "Estado": "PB"
+    }, {
+        "ID": "2604",
+        "Nome": "Cacimbas",
+        "Estado": "PB"
+    }, {
+        "ID": "2605",
+        "Nome": "Caiçara",
+        "Estado": "PB"
+    }, {
+        "ID": "2606",
+        "Nome": "Cajazeiras",
+        "Estado": "PB"
+    }, {
+        "ID": "2607",
+        "Nome": "Cajazeirinhas",
+        "Estado": "PB"
+    }, {
+        "ID": "2608",
+        "Nome": "Caldas Brandão",
+        "Estado": "PB"
+    }, {
+        "ID": "2609",
+        "Nome": "Camalaú",
+        "Estado": "PB"
+    }, {
+        "ID": "2610",
+        "Nome": "Campina Grande",
+        "Estado": "PB"
+    }, {
+        "ID": "2611",
+        "Nome": "Campo de Santana",
+        "Estado": "PB"
+    }, {
+        "ID": "2612",
+        "Nome": "Capim",
+        "Estado": "PB"
+    }, {
+        "ID": "2613",
+        "Nome": "Caraúbas",
+        "Estado": "PB"
+    }, {
+        "ID": "2614",
+        "Nome": "Carrapateira",
+        "Estado": "PB"
+    }, {
+        "ID": "2615",
+        "Nome": "Casserengue",
+        "Estado": "PB"
+    }, {
+        "ID": "2616",
+        "Nome": "Catingueira",
+        "Estado": "PB"
+    }, {
+        "ID": "2617",
+        "Nome": "Catolé do Rocha",
+        "Estado": "PB"
+    }, {
+        "ID": "2618",
+        "Nome": "Caturité",
+        "Estado": "PB"
+    }, {
+        "ID": "2619",
+        "Nome": "Conceição",
+        "Estado": "PB"
+    }, {
+        "ID": "2620",
+        "Nome": "Condado",
+        "Estado": "PB"
+    }, {
+        "ID": "2621",
+        "Nome": "Conde",
+        "Estado": "PB"
+    }, {
+        "ID": "2622",
+        "Nome": "Congo",
+        "Estado": "PB"
+    }, {
+        "ID": "2623",
+        "Nome": "Coremas",
+        "Estado": "PB"
+    }, {
+        "ID": "2624",
+        "Nome": "Coxixola",
+        "Estado": "PB"
+    }, {
+        "ID": "2625",
+        "Nome": "Cruz do Espírito Santo",
+        "Estado": "PB"
+    }, {
+        "ID": "2626",
+        "Nome": "Cubati",
+        "Estado": "PB"
+    }, {
+        "ID": "2627",
+        "Nome": "Cuité",
+        "Estado": "PB"
+    }, {
+        "ID": "2628",
+        "Nome": "Cuité de Mamanguape",
+        "Estado": "PB"
+    }, {
+        "ID": "2629",
+        "Nome": "Cuitegi",
+        "Estado": "PB"
+    }, {
+        "ID": "2630",
+        "Nome": "Curral de Cima",
+        "Estado": "PB"
+    }, {
+        "ID": "2631",
+        "Nome": "Curral Velho",
+        "Estado": "PB"
+    }, {
+        "ID": "2632",
+        "Nome": "Damião",
+        "Estado": "PB"
+    }, {
+        "ID": "2633",
+        "Nome": "Desterro",
+        "Estado": "PB"
+    }, {
+        "ID": "2634",
+        "Nome": "Diamante",
+        "Estado": "PB"
+    }, {
+        "ID": "2635",
+        "Nome": "Dona Inês",
+        "Estado": "PB"
+    }, {
+        "ID": "2636",
+        "Nome": "Duas Estradas",
+        "Estado": "PB"
+    }, {
+        "ID": "2637",
+        "Nome": "Emas",
+        "Estado": "PB"
+    }, {
+        "ID": "2638",
+        "Nome": "Esperança",
+        "Estado": "PB"
+    }, {
+        "ID": "2639",
+        "Nome": "Fagundes",
+        "Estado": "PB"
+    }, {
+        "ID": "2640",
+        "Nome": "Frei Martinho",
+        "Estado": "PB"
+    }, {
+        "ID": "2641",
+        "Nome": "Gado Bravo",
+        "Estado": "PB"
+    }, {
+        "ID": "2642",
+        "Nome": "Guarabira",
+        "Estado": "PB"
+    }, {
+        "ID": "2643",
+        "Nome": "Gurinhém",
+        "Estado": "PB"
+    }, {
+        "ID": "2644",
+        "Nome": "Gurjão",
+        "Estado": "PB"
+    }, {
+        "ID": "2645",
+        "Nome": "Ibiara",
+        "Estado": "PB"
+    }, {
+        "ID": "2646",
+        "Nome": "Igaracy",
+        "Estado": "PB"
+    }, {
+        "ID": "2647",
+        "Nome": "Imaculada",
+        "Estado": "PB"
+    }, {
+        "ID": "2648",
+        "Nome": "Ingá",
+        "Estado": "PB"
+    }, {
+        "ID": "2649",
+        "Nome": "Itabaiana",
+        "Estado": "PB"
+    }, {
+        "ID": "2650",
+        "Nome": "Itaporanga",
+        "Estado": "PB"
+    }, {
+        "ID": "2651",
+        "Nome": "Itapororoca",
+        "Estado": "PB"
+    }, {
+        "ID": "2652",
+        "Nome": "Itatuba",
+        "Estado": "PB"
+    }, {
+        "ID": "2653",
+        "Nome": "Jacaraú",
+        "Estado": "PB"
+    }, {
+        "ID": "2654",
+        "Nome": "Jericó",
+        "Estado": "PB"
+    }, {
+        "ID": "2655",
+        "Nome": "João Pessoa",
+        "Estado": "PB"
+    }, {
+        "ID": "2656",
+        "Nome": "Juarez Távora",
+        "Estado": "PB"
+    }, {
+        "ID": "2657",
+        "Nome": "Juazeirinho",
+        "Estado": "PB"
+    }, {
+        "ID": "2658",
+        "Nome": "Junco do Seridó",
+        "Estado": "PB"
+    }, {
+        "ID": "2659",
+        "Nome": "Juripiranga",
+        "Estado": "PB"
+    }, {
+        "ID": "2660",
+        "Nome": "Juru",
+        "Estado": "PB"
+    }, {
+        "ID": "2661",
+        "Nome": "Lagoa",
+        "Estado": "PB"
+    }, {
+        "ID": "2662",
+        "Nome": "Lagoa de Dentro",
+        "Estado": "PB"
+    }, {
+        "ID": "2663",
+        "Nome": "Lagoa Seca",
+        "Estado": "PB"
+    }, {
+        "ID": "2664",
+        "Nome": "Lastro",
+        "Estado": "PB"
+    }, {
+        "ID": "2665",
+        "Nome": "Livramento",
+        "Estado": "PB"
+    }, {
+        "ID": "2666",
+        "Nome": "Logradouro",
+        "Estado": "PB"
+    }, {
+        "ID": "2667",
+        "Nome": "Lucena",
+        "Estado": "PB"
+    }, {
+        "ID": "2668",
+        "Nome": "Mãe d`Água",
+        "Estado": "PB"
+    }, {
+        "ID": "2669",
+        "Nome": "Malta",
+        "Estado": "PB"
+    }, {
+        "ID": "2670",
+        "Nome": "Mamanguape",
+        "Estado": "PB"
+    }, {
+        "ID": "2671",
+        "Nome": "Manaíra",
+        "Estado": "PB"
+    }, {
+        "ID": "2672",
+        "Nome": "Marcação",
+        "Estado": "PB"
+    }, {
+        "ID": "2673",
+        "Nome": "Mari",
+        "Estado": "PB"
+    }, {
+        "ID": "2674",
+        "Nome": "Marizópolis",
+        "Estado": "PB"
+    }, {
+        "ID": "2675",
+        "Nome": "Massaranduba",
+        "Estado": "PB"
+    }, {
+        "ID": "2676",
+        "Nome": "Mataraca",
+        "Estado": "PB"
+    }, {
+        "ID": "2677",
+        "Nome": "Matinhas",
+        "Estado": "PB"
+    }, {
+        "ID": "2678",
+        "Nome": "Mato Grosso",
+        "Estado": "PB"
+    }, {
+        "ID": "2679",
+        "Nome": "Maturéia",
+        "Estado": "PB"
+    }, {
+        "ID": "2680",
+        "Nome": "Mogeiro",
+        "Estado": "PB"
+    }, {
+        "ID": "2681",
+        "Nome": "Montadas",
+        "Estado": "PB"
+    }, {
+        "ID": "2682",
+        "Nome": "Monte Horebe",
+        "Estado": "PB"
+    }, {
+        "ID": "2683",
+        "Nome": "Monteiro",
+        "Estado": "PB"
+    }, {
+        "ID": "2684",
+        "Nome": "Mulungu",
+        "Estado": "PB"
+    }, {
+        "ID": "2685",
+        "Nome": "Natuba",
+        "Estado": "PB"
+    }, {
+        "ID": "2686",
+        "Nome": "Nazarezinho",
+        "Estado": "PB"
+    }, {
+        "ID": "2687",
+        "Nome": "Nova Floresta",
+        "Estado": "PB"
+    }, {
+        "ID": "2688",
+        "Nome": "Nova Olinda",
+        "Estado": "PB"
+    }, {
+        "ID": "2689",
+        "Nome": "Nova Palmeira",
+        "Estado": "PB"
+    }, {
+        "ID": "2690",
+        "Nome": "Olho d`Água",
+        "Estado": "PB"
+    }, {
+        "ID": "2691",
+        "Nome": "Olivedos",
+        "Estado": "PB"
+    }, {
+        "ID": "2692",
+        "Nome": "Ouro Velho",
+        "Estado": "PB"
+    }, {
+        "ID": "2693",
+        "Nome": "Parari",
+        "Estado": "PB"
+    }, {
+        "ID": "2694",
+        "Nome": "Passagem",
+        "Estado": "PB"
+    }, {
+        "ID": "2695",
+        "Nome": "Patos",
+        "Estado": "PB"
+    }, {
+        "ID": "2696",
+        "Nome": "Paulista",
+        "Estado": "PB"
+    }, {
+        "ID": "2697",
+        "Nome": "Pedra Branca",
+        "Estado": "PB"
+    }, {
+        "ID": "2698",
+        "Nome": "Pedra Lavrada",
+        "Estado": "PB"
+    }, {
+        "ID": "2699",
+        "Nome": "Pedras de Fogo",
+        "Estado": "PB"
+    }, {
+        "ID": "2700",
+        "Nome": "Pedro Régis",
+        "Estado": "PB"
+    }, {
+        "ID": "2701",
+        "Nome": "Piancó",
+        "Estado": "PB"
+    }, {
+        "ID": "2702",
+        "Nome": "Picuí",
+        "Estado": "PB"
+    }, {
+        "ID": "2703",
+        "Nome": "Pilar",
+        "Estado": "PB"
+    }, {
+        "ID": "2704",
+        "Nome": "Pilões",
+        "Estado": "PB"
+    }, {
+        "ID": "2705",
+        "Nome": "Pilõezinhos",
+        "Estado": "PB"
+    }, {
+        "ID": "2706",
+        "Nome": "Pirpirituba",
+        "Estado": "PB"
+    }, {
+        "ID": "2707",
+        "Nome": "Pitimbu",
+        "Estado": "PB"
+    }, {
+        "ID": "2708",
+        "Nome": "Pocinhos",
+        "Estado": "PB"
+    }, {
+        "ID": "2709",
+        "Nome": "Poço Dantas",
+        "Estado": "PB"
+    }, {
+        "ID": "2710",
+        "Nome": "Poço de José de Moura",
+        "Estado": "PB"
+    }, {
+        "ID": "2711",
+        "Nome": "Pombal",
+        "Estado": "PB"
+    }, {
+        "ID": "2712",
+        "Nome": "Prata",
+        "Estado": "PB"
+    }, {
+        "ID": "2713",
+        "Nome": "Princesa Isabel",
+        "Estado": "PB"
+    }, {
+        "ID": "2714",
+        "Nome": "Puxinanã",
+        "Estado": "PB"
+    }, {
+        "ID": "2715",
+        "Nome": "Queimadas",
+        "Estado": "PB"
+    }, {
+        "ID": "2716",
+        "Nome": "Quixabá",
+        "Estado": "PB"
+    }, {
+        "ID": "2717",
+        "Nome": "Remígio",
+        "Estado": "PB"
+    }, {
+        "ID": "2718",
+        "Nome": "Riachão",
+        "Estado": "PB"
+    }, {
+        "ID": "2719",
+        "Nome": "Riachão do Bacamarte",
+        "Estado": "PB"
+    }, {
+        "ID": "2720",
+        "Nome": "Riachão do Poço",
+        "Estado": "PB"
+    }, {
+        "ID": "2721",
+        "Nome": "Riacho de Santo Antônio",
+        "Estado": "PB"
+    }, {
+        "ID": "2722",
+        "Nome": "Riacho dos Cavalos",
+        "Estado": "PB"
+    }, {
+        "ID": "2723",
+        "Nome": "Rio Tinto",
+        "Estado": "PB"
+    }, {
+        "ID": "2724",
+        "Nome": "Salgadinho",
+        "Estado": "PB"
+    }, {
+        "ID": "2725",
+        "Nome": "Salgado de São Félix",
+        "Estado": "PB"
+    }, {
+        "ID": "2726",
+        "Nome": "Santa Cecília",
+        "Estado": "PB"
+    }, {
+        "ID": "2727",
+        "Nome": "Santa Cruz",
+        "Estado": "PB"
+    }, {
+        "ID": "2728",
+        "Nome": "Santa Helena",
+        "Estado": "PB"
+    }, {
+        "ID": "2729",
+        "Nome": "Santa Inês",
+        "Estado": "PB"
+    }, {
+        "ID": "2730",
+        "Nome": "Santa Luzia",
+        "Estado": "PB"
+    }, {
+        "ID": "2731",
+        "Nome": "Santa Rita",
+        "Estado": "PB"
+    }, {
+        "ID": "2732",
+        "Nome": "Santa Teresinha",
+        "Estado": "PB"
+    }, {
+        "ID": "2733",
+        "Nome": "Santana de Mangueira",
+        "Estado": "PB"
+    }, {
+        "ID": "2734",
+        "Nome": "Santana dos Garrotes",
+        "Estado": "PB"
+    }, {
+        "ID": "2735",
+        "Nome": "Santarém",
+        "Estado": "PB"
+    }, {
+        "ID": "2736",
+        "Nome": "Santo André",
+        "Estado": "PB"
+    }, {
+        "ID": "2737",
+        "Nome": "São Bentinho",
+        "Estado": "PB"
+    }, {
+        "ID": "2738",
+        "Nome": "São Bento",
+        "Estado": "PB"
+    }, {
+        "ID": "2739",
+        "Nome": "São Domingos de Pombal",
+        "Estado": "PB"
+    }, {
+        "ID": "2740",
+        "Nome": "São Domingos do Cariri",
+        "Estado": "PB"
+    }, {
+        "ID": "2741",
+        "Nome": "São Francisco",
+        "Estado": "PB"
+    }, {
+        "ID": "2742",
+        "Nome": "São João do Cariri",
+        "Estado": "PB"
+    }, {
+        "ID": "2743",
+        "Nome": "São João do Rio do Peixe",
+        "Estado": "PB"
+    }, {
+        "ID": "2744",
+        "Nome": "São João do Tigre",
+        "Estado": "PB"
+    }, {
+        "ID": "2745",
+        "Nome": "São José da Lagoa Tapada",
+        "Estado": "PB"
+    }, {
+        "ID": "2746",
+        "Nome": "São José de Caiana",
+        "Estado": "PB"
+    }, {
+        "ID": "2747",
+        "Nome": "São José de Espinharas",
+        "Estado": "PB"
+    }, {
+        "ID": "2748",
+        "Nome": "São José de Piranhas",
+        "Estado": "PB"
+    }, {
+        "ID": "2749",
+        "Nome": "São José de Princesa",
+        "Estado": "PB"
+    }, {
+        "ID": "2750",
+        "Nome": "São José do Bonfim",
+        "Estado": "PB"
+    }, {
+        "ID": "2751",
+        "Nome": "São José do Brejo do Cruz",
+        "Estado": "PB"
+    }, {
+        "ID": "2752",
+        "Nome": "São José do Sabugi",
+        "Estado": "PB"
+    }, {
+        "ID": "2753",
+        "Nome": "São José dos Cordeiros",
+        "Estado": "PB"
+    }, {
+        "ID": "2754",
+        "Nome": "São José dos Ramos",
+        "Estado": "PB"
+    }, {
+        "ID": "2755",
+        "Nome": "São Mamede",
+        "Estado": "PB"
+    }, {
+        "ID": "2756",
+        "Nome": "São Miguel de Taipu",
+        "Estado": "PB"
+    }, {
+        "ID": "2757",
+        "Nome": "São Sebastião de Lagoa de Roça",
+        "Estado": "PB"
+    }, {
+        "ID": "2758",
+        "Nome": "São Sebastião do Umbuzeiro",
+        "Estado": "PB"
+    }, {
+        "ID": "2759",
+        "Nome": "Sapé",
+        "Estado": "PB"
+    }, {
+        "ID": "2760",
+        "Nome": "Seridó",
+        "Estado": "PB"
+    }, {
+        "ID": "2761",
+        "Nome": "Serra Branca",
+        "Estado": "PB"
+    }, {
+        "ID": "2762",
+        "Nome": "Serra da Raiz",
+        "Estado": "PB"
+    }, {
+        "ID": "2763",
+        "Nome": "Serra Grande",
+        "Estado": "PB"
+    }, {
+        "ID": "2764",
+        "Nome": "Serra Redonda",
+        "Estado": "PB"
+    }, {
+        "ID": "2765",
+        "Nome": "Serraria",
+        "Estado": "PB"
+    }, {
+        "ID": "2766",
+        "Nome": "Sertãozinho",
+        "Estado": "PB"
+    }, {
+        "ID": "2767",
+        "Nome": "Sobrado",
+        "Estado": "PB"
+    }, {
+        "ID": "2768",
+        "Nome": "Solânea",
+        "Estado": "PB"
+    }, {
+        "ID": "2769",
+        "Nome": "Soledade",
+        "Estado": "PB"
+    }, {
+        "ID": "2770",
+        "Nome": "Sossêgo",
+        "Estado": "PB"
+    }, {
+        "ID": "2771",
+        "Nome": "Sousa",
+        "Estado": "PB"
+    }, {
+        "ID": "2772",
+        "Nome": "Sumé",
+        "Estado": "PB"
+    }, {
+        "ID": "2773",
+        "Nome": "Taperoá",
+        "Estado": "PB"
+    }, {
+        "ID": "2774",
+        "Nome": "Tavares",
+        "Estado": "PB"
+    }, {
+        "ID": "2775",
+        "Nome": "Teixeira",
+        "Estado": "PB"
+    }, {
+        "ID": "2776",
+        "Nome": "Tenório",
+        "Estado": "PB"
+    }, {
+        "ID": "2777",
+        "Nome": "Triunfo",
+        "Estado": "PB"
+    }, {
+        "ID": "2778",
+        "Nome": "Uiraúna",
+        "Estado": "PB"
+    }, {
+        "ID": "2779",
+        "Nome": "Umbuzeiro",
+        "Estado": "PB"
+    }, {
+        "ID": "2780",
+        "Nome": "Várzea",
+        "Estado": "PB"
+    }, {
+        "ID": "2781",
+        "Nome": "Vieirópolis",
+        "Estado": "PB"
+    }, {
+        "ID": "2782",
+        "Nome": "Vista Serrana",
+        "Estado": "PB"
+    }, {
+        "ID": "2783",
+        "Nome": "Zabelê",
+        "Estado": "PB"
+    }]
+}
