@@ -71,9 +71,8 @@ function compareCitiesPerState(){
             const longerCityName = cities.map(city => `${city.Nome} - ${city.Estado}`)
             
             const longer = longerCityName.sort((a,b) => {
-                return a.length - b.length
+                return b.length - a.length
             })
-            .reverse()
             .filter(city => city.length === longerCityName[0].length)
             .sort()[0]
 
@@ -157,8 +156,7 @@ function compareCitiesUF(){
 
 function mostCities(states){
     
-    const mostCities = states.sort((a,b) => a.cidades.length - b.cidades.length)
-    .reverse()
+    const mostCities = states.sort((a,b) => b.cidades.length - a.cidades.length)
     .forEach(state => console.log(`${state.sigla} - ${state.cidades.length} `))
 }
 
