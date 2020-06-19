@@ -102,4 +102,37 @@ async function getAllGrades(){
     return grades
 }
 
-export {getAllGrades}
+async function insertGrade(grade) {
+    const response = await axios.post(API_URL, grade)
+    return response.data.id
+}
+
+
+async function updateGrade(grade) {
+    const response = await axios.put(API_URL, grade)
+    return response.data
+}
+
+async function deleteGrade(grade) {
+    const response = await axios.delete(`${API_URL}/${grade.id}`)
+    return response.data
+}
+
+
+async function getValidationFromGradeType(gradeType) {
+    const gradeValidation = GRADE_VALIDATION.find(
+        (item) => item.gradeType === gradeType
+    )
+    
+    const {minValue, maxValue} = gradeValidation
+
+    return {
+        minValue,
+        maxValue
+    };
+}
+
+
+
+
+export {getAllGrades, insertGrade, updateGrade, deleteGrade, getValidationFromGradeType}
