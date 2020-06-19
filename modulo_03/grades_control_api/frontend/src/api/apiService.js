@@ -50,8 +50,15 @@ async function getAllGrades(){
     let allGradeTypes = new Set();
     grades.forEach(grade => allGradeTypes.add(grade.type))
     allGradeTypes = Array.from(allGradeTypes)
-
-    const allCombinations = []
+    
+    let maxId = -1;
+    grades.forEach(({id}) => {
+        if(id > maxId) {
+            maxId = id
+        }
+    })
+    let nextId = maxId + 1
+   let allCombinations = []
 
     allStudents.forEach(student => {
         allSubjects.forEach(subject => {
@@ -65,26 +72,34 @@ async function getAllGrades(){
         })
     })
 
-    allCombinations.forEach((student, subject, type) => {
-        const hasItem = grades.find(grade => grade.subject === subject &&
+    allCombinations.forEach(({student, subject, type}) => {
+        const hasItem = grades.find(grade => {
+            return grade.subject ===subject &&
             grade.student === student &&
-            grade.type === type)
+            grade.type === type
+        })
+            
         if(!hasItem) {
             grades.push({
-                id: grades.length + 1,
+                id: nextId++,
                 student,
-                
+                studentLowerCase: student.toLowerCase(),
                 subject,
-                
+                subjectLowerCase: subject.toLowerCase(),
                 type,
-                
+                typeLowerCase: type.toLowerCase(),
                 value: 0,
                 isDeleted: true
             })
         }
     })
+
+    grades.sort((a,b) => a.typeLowerCase.localeCompare(b.typeLowerCase))
+    grades.sort((a,b) => a.subjectLowerCase.localeCompare(b.subjectLowerCase))
+    grades.sort((a,b) => a.studentLowerCase.localeCompare(b.studentLowerCase))
+
     
-    return allCombinations
+    return grades
 }
 
 export {getAllGrades}
