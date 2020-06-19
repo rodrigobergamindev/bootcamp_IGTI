@@ -6,7 +6,7 @@ export default class User extends Component {
 
     render() {
 
-        const {login, name, picture} = this.props.user
+        const {name, picture} = this.props.user
         return (
             <div className={css.flexRow}>
                 <img className={css.avatar} src={picture.large} alt={name.first}/>

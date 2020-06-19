@@ -1,46 +1,26 @@
-import React, { Component } from 'react'
+import React, { useState, useEffect } from 'react'
 import User from './User';
 
-export default class Users extends Component {
+export default function Users ({users}){
+    const [secondsVisible, setSecondsVisible] = useState(0)
 
-    constructor(){
-        super()
-        this.state = {
-            secondsVisible:0,
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setSecondsVisible(secondsVisible + 1)
+        }, 1000)
+        return () => {
+           clearInterval(interval)
         }
-
-        this.interval = null;
-    }
-    componentDidMount() {
-
-        this.interval = setInterval(() => {
-            const { secondsVisible } = this.state
-            this.setState({
-                secondsVisible: secondsVisible + 1
-            })
-        }, 1000);
-    }
-
-    componentDidUpdate() {
-        console.log('componentDidUpdate de Users.jsx')
-    }
-
-    componentWillUnmount(){
-        clearInterval(this.interval)
-    }
-
-    render() {
-        const {users} = this.props
-        const { secondsVisible } = this.state;
+    }, [secondsVisible])
 
         return (
             <div>
                 <p>Componente Users visivel por {secondsVisible} seconds</p>
                {users.map(user => {
-                   const {login, name, picture} = user
+                   const {login} = user
                return <li key={login.uuid}><User user={user}/></li>
                })}
             </div>
         )
-    }
+    
 }
