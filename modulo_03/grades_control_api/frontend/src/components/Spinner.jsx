@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Spinner() {
   return (
-    <div className={styles.flexRow}>
+    <div style={styles.flexRow}>
       <div className="preloader-wrapper small active">
         <div className="spinner-layer spinner-blue-only">
           <div className="circle-clipper left">
