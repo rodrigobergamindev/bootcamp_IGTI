@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import * as api from './api/apiService'
 import Spinner from './components/Spinner'
 import GradesControl from './components/GradesControl'
+import ModalGrade from './components/ModalGrade'
 
 export default function App() {
   
@@ -21,12 +22,47 @@ export default function App() {
     getGrades()
   }, [])
 
-  const handleDelete = () => {
-    console.log('handleDelete')
+  const handleDelete = async (gradeToDelete) => {
+    const isDeleted = await api.deleteGrade(gradeToDelete)
+    
+
+    if(isDeleted) {
+      const deletedGradeindex = 
+      allGrades.findIndex(grade => grade.id === gradeToDelete.id)
+    
+
+    const newGrades = Object.assign([], allGrades)
+    newGrades[deletedGradeindex].isDeleted = true
+    newGrades[deletedGradeindex].value = 0 
+
+    setAllGrades(newGrades)
+  }
+}
+
+  const handlePersist = (grade) => {
+    setSelectedGrade(grade)
+    setIsModalOpen(true)
   }
 
-  const handlePersist = () => {
-    console.log('Handle Persist')
+  const handlePersistData = async (formData) => {
+    console.log(formData)
+
+    const {id, newValue} = formData;
+    const newGrades = Object.assign([], allGrades)
+    const gradeToPersist = newGrades.find(grade => grade.id === id)
+    gradeToPersist.value = newValue
+
+    if(gradeToPersist.isDeleted) {
+      gradeToPersist.isDeleted = false
+      await api.insertGrade(gradeToPersist)
+    }else {
+      await api.updateGrade(gradeToPersist)
+    }
+    setIsModalOpen(false)
+  }
+
+  const handleClose = () => {
+    setIsModalOpen(false)
   }
 
   return (
@@ -39,6 +75,7 @@ export default function App() {
       onDelete={handleDelete}
       onPersist={handlePersist}/>}
 
+    {isModalOpen && <ModalGrade onSave={handlePersistData} onClose={handleClose} selectedGrade={selectedGrade}/>}
     </div>
     
   )
